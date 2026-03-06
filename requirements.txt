@@ -1,0 +1,6 @@
+streamlit
+kafka-python
+psycopg2-binary
+google-generativeai
+pandas
+sqlalchemy

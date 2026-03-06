@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Healthcare Dashboard</title>
+</head>
+<body>
+    <h2>Gemini AI Patient Monitoring</h2>
+
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>HR</th>
+            <th>SpO2</th>
+            <th>Temp</th>
+            <th>BP</th>
+            <th>Severity</th>
+            <th>Reason</th>
+            <th>Time</th>
+        </tr>
+
+        {% for row in data %}
+        <tr>
+            {% for col in row %}
+            <td>{{ col }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
